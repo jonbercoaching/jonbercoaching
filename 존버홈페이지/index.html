@@ -12,8 +12,7 @@
 <meta property="og:url" content="https://www.jonbercoaching.com/"/>
 <meta name="theme-color" content="#2E211A"/>
 <link rel="icon" href="coach.jpg"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
 <style>
 :root{
@@ -21,11 +20,11 @@
   --cream:#F7F2EA; --paper:#FFFDF9; --text:#2A1F18; --text-2:#6E6157; --line:#EAE0D2; --soft:#F8EDDD;
   --rose:#B4636B; --green:#4F6B5A;
   --r:18px; --r-sm:12px; --shadow:0 2px 14px rgba(46,33,26,.07); --shadow-lg:0 10px 30px rgba(46,33,26,.14);
-  --serif:'Noto Serif KR',serif; --sans:'Noto Sans KR',sans-serif;
+  --serif:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif; --sans:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--cream);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:var(--cream);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;letter-spacing:-.15px}
 a{color:inherit}
 button{font-family:inherit}
 .material-icons-round{vertical-align:middle}
@@ -34,7 +33,7 @@ button{font-family:inherit}
 .top-bar{position:sticky;top:0;z-index:100;background:var(--ink);color:#fff}
 .top-inner{max-width:720px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px}
 .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);flex-shrink:0}
-.brand{font-family:var(--serif);font-weight:900;font-size:1.12rem;letter-spacing:-.3px;cursor:pointer}
+.brand{font-family:var(--serif);font-weight:800;font-size:1.14rem;letter-spacing:-.6px;cursor:pointer}
 .brand b{color:var(--gold-l);margin-right:1px}
 .top-actions{margin-left:auto;display:flex;gap:8px;align-items:center}
 .icon-btn{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;border:none;cursor:pointer}
@@ -48,7 +47,7 @@ button{font-family:inherit}
 .page.active{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin:30px 0 12px}
-.section-title{font-family:var(--serif);font-size:1.12rem;font-weight:900;letter-spacing:-.3px}
+.section-title{font-family:var(--serif);font-size:1.15rem;font-weight:800;letter-spacing:-.6px}
 .section-title small{display:block;font-family:var(--sans);font-size:.74rem;font-weight:500;color:var(--text-2);margin-top:3px;letter-spacing:0}
 .more-link{font-size:.78rem;color:var(--accent);font-weight:700;text-decoration:none;cursor:pointer;white-space:nowrap}
 .card{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line)}
@@ -58,7 +57,7 @@ button{font-family:inherit}
 .hero img{width:100%;display:block;aspect-ratio:1280/432;object-fit:cover}
 .slogan{background:linear-gradient(180deg,var(--ink) 0%,#3A2A20 100%);color:#F7F2EA;padding:26px 22px 28px;text-align:center;position:relative}
 .slogan::before{content:'';display:block;width:36px;height:2px;background:var(--gold);margin:0 auto 16px}
-.slogan p{font-family:var(--serif);font-weight:700;font-size:1.22rem;line-height:1.75;letter-spacing:-.4px;word-break:keep-all}
+.slogan p{font-family:var(--serif);font-weight:600;font-size:1.22rem;line-height:1.7;letter-spacing:-.6px;word-break:keep-all}
 .slogan p em{font-style:normal;color:var(--gold-l)}
 .slogan span{display:block;margin-top:14px;font-size:.78rem;color:rgba(247,242,234,.6);letter-spacing:2px}
 
@@ -66,7 +65,7 @@ button{font-family:inherit}
 .coach-card{display:grid;grid-template-columns:132px 1fr;gap:0;overflow:hidden;margin-top:16px}
 .coach-card img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;min-height:190px}
 .coach-body{padding:18px 18px 16px}
-.coach-hi{font-family:var(--serif);font-weight:900;font-size:1.05rem;margin-bottom:8px}
+.coach-hi{font-family:var(--serif);font-weight:800;letter-spacing:-.5px;font-size:1.05rem;margin-bottom:8px}
 .coach-hi b{color:var(--accent)}
 .coach-text{font-size:.85rem;line-height:1.75;color:var(--text-2);word-break:keep-all}
 .coach-btns{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
@@ -79,9 +78,9 @@ button{font-family:inherit}
 
 /* 오늘의 한마디 */
 .quote-card{padding:22px 20px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--paper),var(--soft))}
-.quote-card::after{content:'“';position:absolute;right:14px;top:-18px;font-family:var(--serif);font-size:7rem;color:rgba(201,151,79,.18);line-height:1}
+.quote-card::after{content:'“';position:absolute;right:14px;top:-18px;font-family:Georgia,serif;font-size:7rem;color:rgba(201,151,79,.18);line-height:1}
 .quote-date{font-size:.72rem;color:var(--text-2);margin-bottom:8px;font-weight:500}
-.quote-text{font-family:var(--serif);font-size:1.02rem;font-weight:700;line-height:1.75;word-break:keep-all;position:relative;z-index:1}
+.quote-text{font-family:var(--serif);font-size:1.04rem;font-weight:600;letter-spacing:-.3px;line-height:1.75;word-break:keep-all;position:relative;z-index:1}
 .quote-by{font-size:.76rem;color:var(--accent);margin-top:10px;font-weight:700}
 
 /* 테스트 카드 그리드 */
@@ -126,7 +125,7 @@ button{font-family:inherit}
 .page-hero{border-radius:var(--r);padding:24px 20px;color:#F7F2EA;background:radial-gradient(circle at 85% 10%,#6B4A33 0%,var(--ink) 65%);position:relative;overflow:hidden}
 .page-hero .ph-emoji{position:absolute;right:16px;top:12px;font-size:3.6rem;opacity:.25}
 .ph-kicker{font-size:.72rem;letter-spacing:2px;color:var(--gold);font-weight:700;margin-bottom:6px}
-.ph-title{font-family:var(--serif);font-size:1.4rem;font-weight:900;letter-spacing:-.5px;margin-bottom:10px}
+.ph-title{font-family:var(--serif);font-size:1.45rem;font-weight:800;letter-spacing:-.8px;margin-bottom:10px}
 .ph-desc{font-size:.84rem;line-height:1.7;color:rgba(247,242,234,.8);word-break:keep-all;max-width:90%}
 .ph-coach{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:.76rem;color:var(--gold-l);font-weight:700}
 .ph-coach img{width:26px;height:26px;border-radius:50%;object-fit:cover;border:1.5px solid var(--gold)}
@@ -149,7 +148,7 @@ button{font-family:inherit}
 .blk-t{font-size:.78rem;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:5px}
 .blk-t.s{color:var(--accent-d)} .blk-t.rx{color:var(--green)} .blk-t.say{color:var(--ink)} .blk-t.no{color:#A6464E}
 .blk-x{font-size:.85rem;line-height:1.75;color:var(--text);word-break:keep-all}
-.say-box{background:var(--ink);color:#F7F2EA;border-radius:12px;padding:12px 14px;font-family:var(--serif);font-size:.9rem;line-height:1.7;font-weight:500;word-break:keep-all}
+.say-box{background:var(--ink);color:#F7F2EA;border-radius:12px;padding:12px 14px;font-family:var(--serif);font-size:.9rem;line-height:1.7;font-weight:500;letter-spacing:-.2px;word-break:keep-all}
 .dont{list-style:none}
 .dont li{font-size:.83rem;color:var(--text-2);line-height:1.6;padding-left:20px;position:relative;margin-bottom:4px;word-break:keep-all}
 .dont li::before{content:'✕';position:absolute;left:2px;color:#A6464E;font-weight:900;font-size:.78rem}
@@ -163,7 +162,7 @@ button{font-family:inherit}
 .run-count{margin-left:auto;font-size:.76rem;color:var(--text-2);font-weight:700}
 .bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:22px}
 .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--gold));border-radius:99px;transition:width .3s}
-.run-q{font-family:var(--serif);font-size:1.12rem;font-weight:900;line-height:1.6;margin-bottom:18px;word-break:keep-all;min-height:3.2em}
+.run-q{font-family:var(--serif);font-size:1.14rem;font-weight:700;letter-spacing:-.4px;line-height:1.6;margin-bottom:18px;word-break:keep-all;min-height:3.2em}
 .opts{display:flex;flex-direction:column;gap:8px}
 .opt{text-align:left;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:#fff;font-size:.88rem;font-weight:500;cursor:pointer;line-height:1.5;transition:all .12s;word-break:keep-all;color:var(--text)}
 .opt:hover{border-color:var(--accent);background:var(--soft)}
@@ -182,7 +181,7 @@ button{font-family:inherit}
 .result{text-align:center}
 .res-label{font-size:.74rem;letter-spacing:2px;color:var(--accent);font-weight:700}
 .res-emoji{font-size:4rem;margin:12px 0 6px}
-.res-title{font-family:var(--serif);font-size:1.35rem;font-weight:900;line-height:1.45;word-break:keep-all}
+.res-title{font-family:var(--serif);font-size:1.4rem;font-weight:800;letter-spacing:-.7px;line-height:1.45;word-break:keep-all}
 .res-sum{display:inline-block;margin-top:8px;font-size:.76rem;font-weight:700;background:var(--soft);color:var(--accent-d);padding:4px 12px;border-radius:99px}
 .res-meter{max-width:280px;margin:16px auto 0}
 .res-desc{text-align:left;font-size:.88rem;line-height:1.8;margin-top:18px;word-break:keep-all;background:#FAF5EE;padding:16px;border-radius:14px}
@@ -233,7 +232,7 @@ button{font-family:inherit}
 
 <header class="top-bar">
   <div class="top-inner">
-    <img class="avatar" src="coach.jpg" alt="1% 코치"/>
+    <img class="avatar" src="coach.jpg" alt="1%코치"/>
     <div class="brand" onclick="go('home')"><b>1%</b>코칭클럽</div>
     <div class="top-actions">
       <a class="icon-btn" href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener" aria-label="유튜브"><span class="material-icons-round">smart_display</span></a>
@@ -247,7 +246,7 @@ button{font-family:inherit}
 <!-- ═══════════ 홈 ═══════════ -->
 <section class="page active" id="page-home">
   <div class="hero">
-    <img src="banner.jpg" alt="1%코칭클럽 — 1% 코치"/>
+    <img src="banner.jpg" alt="1%코칭클럽 — 1%코치"/>
     <div class="slogan">
       <p>모두에게 좋은 사람이느라 지친 당신,<br/><em>이제 당신에게 좋은 사람이 될 시간입니다.</em></p>
       <span>1% COACHING CLUB</span>
@@ -255,9 +254,9 @@ button{font-family:inherit}
   </div>
 
   <div class="card coach-card">
-    <img src="coach-wide.jpg" alt="1% 코치"/>
+    <img src="coach-wide.jpg" alt="1%코치"/>
     <div class="coach-body">
-      <div class="coach-hi">안녕하세요, <b>1%</b>예요.</div>
+      <div class="coach-hi">안녕하세요, <b>1%코치</b>예요.</div>
       <p class="coach-text">사람에게 지치고, 사랑에 아프고, 회사 화장실에서 몰래 울던 날들. 그 마음 저도 알아요. 여기서는 당신의 이야기를 판단하지 않고 들을게요. 그리고 내일은 조금 덜 아플 수 있는 방법을 함께 찾아요.</p>
       <div class="coach-btns">
         <a class="pill kakao" href="https://open.kakao.com/me/jonber" target="_blank" rel="noopener"><span class="material-icons-round">chat</span>카톡으로 고민 보내기</a>
@@ -266,11 +265,11 @@ button{font-family:inherit}
     </div>
   </div>
 
-  <div class="section-head"><div class="section-title">오늘의 한마디<small>매일 아침 바뀌는 1%의 마음 처방</small></div></div>
+  <div class="section-head"><div class="section-title">오늘의 한마디<small>매일 아침 바뀌는 1%코치의 마음 처방</small></div></div>
   <div class="card quote-card">
     <div class="quote-date" id="quote-date"></div>
     <div class="quote-text" id="daily-quote"></div>
-    <div class="quote-by">— 1%</div>
+    <div class="quote-by">— 1%코치</div>
   </div>
 
   <div class="section-head"><div class="section-title">마음 테스트<small>3분이면 나를 조금 더 알게 돼요</small></div><a class="more-link" onclick="go('tests')">전체 보기 ›</a></div>
@@ -290,7 +289,7 @@ button{font-family:inherit}
     <div class="ph-kicker">RELATIONSHIP</div>
     <div class="ph-title">인간관계 처세술</div>
     <p class="ph-desc">착한 사람이 손해 보는 게 아니라, 선을 모르는 사람이 손해 봐요. 호구 탈출부터 거절하는 법까지, 실제로 쓸 수 있는 말을 처방해 드릴게요.</p>
-    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%의 처방</div>
+    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%코치의 처방</div>
   </div>
   <div class="chips" data-for="people"></div>
   <div id="list-people"></div>
@@ -303,7 +302,7 @@ button{font-family:inherit}
     <div class="ph-kicker">LOVE</div>
     <div class="ph-title">연애 · 남녀관계</div>
     <p class="ph-desc">사랑 앞에서는 누구나 서툴러요. 여자친구·남자친구 만드는 법부터 연락 문제, 이별과 재회까지. 마음이 덜 다치는 방향으로 함께 고민해요.</p>
-    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%의 처방</div>
+    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%코치의 처방</div>
   </div>
   <div class="chips" data-for="love"></div>
   <div id="list-love"></div>
@@ -316,7 +315,7 @@ button{font-family:inherit}
     <div class="ph-kicker">WORK LIFE</div>
     <div class="ph-title">직장 생존법</div>
     <p class="ph-desc">회사는 일보다 사람 때문에 힘들어요. 상사, 동료, 사내 정치 속에서 나를 지키며 인정받는 법을 정리했어요.</p>
-    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%의 처방</div>
+    <div class="ph-coach"><img src="coach.jpg" alt=""/>1%코치의 처방</div>
   </div>
   <div class="chips" data-for="work"></div>
   <div id="list-work"></div>
@@ -330,7 +329,7 @@ button{font-family:inherit}
       <div class="ph-kicker">SELF CHECK</div>
       <div class="ph-title">마음 테스트</div>
       <p class="ph-desc">나도 몰랐던 내 마음의 모양을 들여다보는 시간. 결과를 친구에게 공유해 보세요.</p>
-      <div class="ph-coach"><img src="coach.jpg" alt=""/>1%가 준비했어요</div>
+      <div class="ph-coach"><img src="coach.jpg" alt=""/>1%코치가 준비했어요</div>
     </div>
     <div class="test-grid" id="all-tests" style="margin-top:16px"></div>
   </div>
@@ -845,7 +844,7 @@ function renderHome() {
       </button>
       <div class="story-body"><div class="story-inner">
         <div class="bubble q">${s.story}</div>
-        <div class="answer-row"><img src="coach.jpg" alt=""/><div class="bubble a"><b>1%의 답장</b>${s.answer}</div></div>
+        <div class="answer-row"><img src="coach.jpg" alt=""/><div class="bubble a"><b>1%코치의 답장</b>${s.answer}</div></div>
       </div></div>
     </div>`).join('');
 
@@ -888,7 +887,7 @@ function renderSection(key, tab = 'all') {
       </button>
       <div class="adv-body"><div class="adv-inner">
         <div class="blk"><div class="blk-t s">📌 이런 상황이라면</div><div class="blk-x">${d.situation}</div></div>
-        <div class="blk"><div class="blk-t rx">💊 1%의 처방</div><div class="blk-x">${d.rx}</div></div>
+        <div class="blk"><div class="blk-t rx">💊 1%코치의 처방</div><div class="blk-x">${d.rx}</div></div>
         <div class="blk"><div class="blk-t say">🗣 이렇게 말해 보세요</div><div class="say-box">${d.say}</div></div>
         <div class="blk"><div class="blk-t no">🚫 이건 하지 마세요</div><ul class="dont">${d.dont.map(x => `<li>${x}</li>`).join('')}</ul></div>
         ${i === 0 ? `<a class="adv-cta" onclick="openTest('${sec.cta.test}')">🔮 ${sec.cta.text}</a>` : ''}
@@ -1005,7 +1004,7 @@ function showResult() {
       <div class="res-sum">${r.summary}</div>
       ${meter !== null ? `<div class="res-meter"><div class="bar" style="margin:0 0 6px"><i style="width:${meter}%"></i></div><div style="font-size:.74rem;color:var(--text-2);font-weight:700">${meterLabel}</div></div>` : ''}
       <div class="res-coach"><img src="coach.jpg" alt=""/><div class="res-desc" style="margin-top:0;flex:1">${r.desc}</div></div>
-      <div class="res-tips"><h4>1%의 마음 처방</h4><ul>${r.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>
+      <div class="res-tips"><h4>1%코치의 마음 처방</h4><ul>${r.tips.map(t => `<li>${t}</li>`).join('')}</ul></div>
       <div class="run-actions">
         <button class="btn ghost" onclick="startTest('${T.id}')"><span class="material-icons-round">replay</span>다시 하기</button>
         <button class="btn primary" onclick="shareTest('${r.title.replace(/'/g, '')}')"><span class="material-icons-round">share</span>결과 공유</button>
