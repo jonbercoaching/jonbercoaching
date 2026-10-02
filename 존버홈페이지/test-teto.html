@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>테토 vs 에겐 성향 테스트 | 1%코칭클럽 마음 테스트</title>
+<meta name="description" content="요즘 많이 이야기하는 테토(직진·추진형)와 에겐(공감·섬세형) 성향, 나는 어느 쪽일까요? 10개의 상황 질문으로 나의 관계 스타일을 알아보고, 성향별로 관계에서 조심하면 좋을 점을 알려드려요. 정답이 있는 테스트가 아니니 편하게 골라 보세요."/>
+<link rel="canonical" href="https://www.jonbercoaching.com/test-teto.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="1%코칭클럽"/>
+<meta property="og:title" content="테토 vs 에겐 성향 테스트 | 1%코칭클럽 마음 테스트"/>
+<meta property="og:description" content="요즘 많이 이야기하는 테토(직진·추진형)와 에겐(공감·섬세형) 성향, 나는 어느 쪽일까요? 10개의 상황 질문으로 나의 관계 스타일을 알아보고, 성향별로 관계에서 조심하면 좋을 점을 알려드려요. 정답이 있는 테스트가 아니니 편하게 골라 보세요."/>
+<meta property="og:image" content="https://www.jonbercoaching.com/banner.jpg"/>
+<meta property="og:url" content="https://www.jonbercoaching.com/test-teto.html"/>
+<meta name="theme-color" content="#2E211A"/>
+<meta name="google-site-verification" content="AavClKAf3sU2ZreB6oYWt73z9Ht51uqcLzUjASguQh0" />
+<meta name="naver-site-verification" content="199d537dd5af4e6e393c9560109fb34e0567b44c" />
+<link rel="icon" href="coach.jpg"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="top-bar">
+  <div class="top-inner">
+    <a href="index.html"><img class="avatar" src="coach.jpg" alt="1%코치"/></a>
+    <a class="brand" href="index.html"><b>1%</b>코칭클럽</a>
+    <div class="top-actions">
+      <a class="icon-btn" href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener" aria-label="유튜브"><span class="material-icons-round">smart_display</span></a>
+      <a class="kakao-btn" href="https://open.kakao.com/me/jonber" target="_blank" rel="noopener"><span class="material-icons-round">chat</span><span class="kb-text">고민 보내기</span></a>
+    </div>
+  </div>
+</header>
+<main class="main">
+<nav class="crumb"><a href="index.html">홈</a> <span class="sep">›</span> <a href="tests.html">마음 테스트</a> <span class="sep">›</span> <span>테토 vs 에겐 성향 테스트</span></nav>
+<div class="page-hero test-hero" style="--c:#8E5521">
+  <div class="ph-emoji">⚡</div>
+  <div class="ph-kicker">SELF CHECK · ⏱ 2분</div>
+  <h1 class="ph-title">테토 vs 에겐 성향 테스트</h1>
+  <p class="ph-desc">나는 직진하는 테토형일까, 공감하는 에겐형일까?</p>
+</div>
+<div class="card test-intro" id="test-intro">
+  <p>요즘 많이 이야기하는 테토(직진·추진형)와 에겐(공감·섬세형) 성향, 나는 어느 쪽일까요? 10개의 상황 질문으로 나의 관계 스타일을 알아보고, 성향별로 관계에서 조심하면 좋을 점을 알려드려요. 정답이 있는 테스트가 아니니 편하게 골라 보세요.</p>
+  <div class="ti-meta"><span>📝 10문항</span><span>⏱ 약 2분</span><span>🔒 답변은 저장되지 않아요</span></div>
+  <button class="btn primary big" onclick="startTest()">테스트 시작하기<span class="material-icons-round">arrow_forward</span></button>
+</div>
+<div id="test-runner" class="card runner" style="display:none"></div>
+<div class="section-head"><h2 class="section-title">다른 테스트도 해보세요</h2><a class="more-link" href="tests.html">전체 보기 ›</a></div>
+<div class="test-grid"><a class="test-tile " style="--c:#B8742F" href="test-hogu.html">
+  <div class="tt-emoji">🫠</div>
+  <div class="tt-title">나의 호구 지수 테스트</div>
+  <div class="tt-desc">혹시 나, 착한 게 아니라 이용당하고 있는 건 아닐까?</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#B4636B" href="test-love.html">
+  <div class="tt-emoji">💞</div>
+  <div class="tt-title">나의 연애 스타일 테스트</div>
+  <div class="tt-desc">사랑할 때 나는 어떤 모습일까? 애착 유형으로 알아보기</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#6E6157" href="test-cut.html">
+  <div class="tt-emoji">✂️</div>
+  <div class="tt-title">손절해야 할 관계 체크리스트</div>
+  <div class="tt-desc">떠오르는 그 사람, 계속 곁에 둬도 괜찮을까?</div>
+  <span class="tt-time">⏱ 1분</span>
+</a><a class="test-tile " style="--c:#5C4A6E" href="test-gaslight.html">
+  <div class="tt-emoji">🕯️</div>
+  <div class="tt-title">혹시 나도 가스라이팅 당하고 있을까?</div>
+  <div class="tt-desc">&quot;내가 예민한 걸까?&quot; 자꾸 그런 생각이 든다면</div>
+  <span class="tt-time">⏱ 1분</span>
+</a></div>
+<div class="section-head"><h2 class="section-title">관련 처방 읽기</h2></div>
+<div class="list"><a class="card list-item" data-tab="hogu" href="people-money-lend.html">
+  <div class="adv-emoji">💸</div>
+  <div class="li-body"><div class="li-tag">인간관계 · 호구 탈출</div><div class="adv-title">돈 빌려달라는 지인, 이번엔 어떻게 거절하죠?</div><div class="adv-sub">빌려주면 돈도 잃고 사람도 잃는다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="hogu" href="people-nice-burden.html">
+  <div class="adv-emoji">🙇</div>
+  <div class="li-body"><div class="li-tag">인간관계 · 호구 탈출</div><div class="adv-title">&quot;네가 착하니까&quot;라는 말에 매번 일을 떠안을 때</div><div class="adv-sub">착함은 칭찬이 아니라 청구서가 될 수 있다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="betray" href="people-secret-leak.html">
+  <div class="adv-emoji">🗝️</div>
+  <div class="li-body"><div class="li-tag">인간관계 · 뒤통수·뒷담화</div><div class="adv-title">믿고 털어놓은 비밀이 소문으로 돌아왔을 때</div><div class="adv-sub">비밀은 그 사람의 그릇 크기만큼만 지켜진다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a></div>
+
+<footer class="footer">
+  <div class="foot-links"><a href="about.html">1%코칭클럽 소개</a> · <a href="contact.html">문의하기</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="stories.html">고민사연</a></div>
+  <strong>1%코칭클럽</strong> · 유튜브 <a href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener">@1pro_coaching</a><br/>
+  이 사이트의 내용과 테스트는 일상의 고민을 돕기 위한 코칭 콘텐츠이며, 의학적 진단이나 전문 의료 상담을 대신하지 않습니다.
+  <div class="help-line">혼자 견디기 힘든 마음이라면 지금 바로 이야기하세요.<br/><strong>자살예방상담 109</strong> · <strong>정신건강위기상담 1577-0199</strong> · <strong>여성긴급전화 1366</strong> (24시간)</div>
+  <p style="margin-top:12px">© 2026 1%코칭클럽</p>
+</footer>
+</main>
+<nav class="bottom-nav"><div class="nav-inner"><a class="nav-item" href="index.html"><span class="material-icons-round">home</span><span>홈</span></a><a class="nav-item" href="people.html"><span class="material-icons-round">diversity_3</span><span>인간관계</span></a><a class="nav-item" href="love.html"><span class="material-icons-round">favorite</span><span>연애</span></a><a class="nav-item" href="work.html"><span class="material-icons-round">work</span><span>직장</span></a><a class="nav-item active" href="tests.html"><span class="material-icons-round">psychology_alt</span><span>테스트</span></a></div></nav>
+<div class="snackbar" id="snackbar"></div>
+<script src="common.js"></script>
+<script>window.TEST = {"id": "teto", "emoji": "⚡", "title": "테토 vs 에겐 성향 테스트", "desc": "나는 직진하는 테토형일까, 공감하는 에겐형일까?", "time": "2분", "color": "#8E5521", "type": "count", "key": "T", "questions": [{"q": "친구와 의견이 다를 때 나는?", "a": [{"t": "내 생각을 분명하게 말한다", "k": "T"}, {"t": "일단 친구 이야기를 더 들어본다", "k": "E"}]}, {"q": "좋아하는 사람이 생기면?", "a": [{"t": "먼저 연락하고 약속을 잡는다", "k": "T"}, {"t": "상대가 다가오길 기다리며 신호를 보낸다", "k": "E"}]}, {"q": "스트레스가 쌓이면?", "a": [{"t": "운동하거나 몸을 움직여 푼다", "k": "T"}, {"t": "누군가와 대화하거나 혼자 감성 충전", "k": "E"}]}, {"q": "여행 계획을 세울 때 나는?", "a": [{"t": "핵심만 정하고 바로 결정한다", "k": "T"}, {"t": "분위기 좋은 곳을 오래 찾아본다", "k": "E"}]}, {"q": "누군가 고민을 털어놓으면?", "a": [{"t": "해결책을 먼저 알려준다", "k": "T"}, {"t": "공감하며 마음을 먼저 들어준다", "k": "E"}]}, {"q": "회의에서 나는?", "a": [{"t": "먼저 의견을 내고 주도한다", "k": "T"}, {"t": "분위기를 살피며 조율한다", "k": "E"}]}, {"q": "선물을 고를 때 기준은?", "a": [{"t": "실용적이고 오래 쓰는 것", "k": "T"}, {"t": "의미 있고 감동을 주는 것", "k": "E"}]}, {"q": "서운한 일이 생기면?", "a": [{"t": "그 자리에서 바로 말한다", "k": "T"}, {"t": "혼자 생각을 정리한 뒤 돌려 말한다", "k": "E"}]}, {"q": "주말에 끌리는 건?", "a": [{"t": "새로운 도전, 활동적인 약속", "k": "T"}, {"t": "편안한 카페, 영화, 집콕", "k": "E"}]}, {"q": "사람들이 나를 보고 하는 말은?", "a": [{"t": "\"추진력 있다, 시원시원하다\"", "k": "T"}, {"t": "\"섬세하다, 따뜻하다\"", "k": "E"}]}], "results": [{"min": 0, "emoji": "🌸", "title": "에겐 100% 감성형", "summary": "공감력 만렙", "desc": "당신은 사람의 마음을 누구보다 잘 읽는 사람이에요. 곁에 있으면 편안해지는 힐러죠. 다만 남의 감정까지 떠안다 보면 쉽게 지칠 수 있어요.", "tips": ["공감은 하되, 상대의 문제까지 내 숙제로 가져오지 마세요.", "원하는 것이 있다면 돌려 말하지 말고 한 문장으로 말해 보세요."]}, {"min": 4, "emoji": "🌙", "title": "에겐 성향 조율형", "summary": "부드러운 리더십", "desc": "섬세함 속에 은근한 단단함이 있어요. 분위기를 살피면서도 필요할 땐 의견을 내죠. 관계를 오래 지키는 힘이 있는 타입이에요.", "tips": ["중요한 순간엔 조율보다 결정을 먼저 해 보세요.", "당신의 배려를 당연히 여기는 사람은 멀리하세요."]}, {"min": 6, "emoji": "🔥", "title": "테토 성향 실행형", "summary": "믿음직한 추진력", "desc": "결정이 빠르고 행동으로 보여주는 사람이에요. 주변에서 의지하는 사람이 많죠. 가끔은 속도를 늦추고 마음을 먼저 들어주면 더 큰 사람이 돼요.", "tips": ["해결책을 말하기 전에 \"많이 힘들었겠다\" 한마디를 먼저.", "직설이 상처가 될 수 있는 상대를 한 번 떠올려 보세요."]}, {"min": 8, "emoji": "⚡", "title": "테토 100% 직진형", "summary": "타고난 리더", "desc": "망설임 없는 직진, 시원한 결단력! 위기에 강하고 사람들을 이끄는 힘이 있어요. 다만 모두가 당신만큼 빠르지 않다는 걸 기억하면 관계가 훨씬 부드러워져요.", "tips": ["상대의 속도를 존중하는 연습이 당신을 더 매력적으로 만들어요.", "강해 보여도 지칠 수 있어요. 기댈 사람 한 명은 꼭 두세요."]}]};</script>
+<script src="test.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

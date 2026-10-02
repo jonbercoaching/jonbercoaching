@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>마음 피로도 체크 | 1%코칭클럽 마음 테스트</title>
+<meta name="description" content="요즘 쉬어도 쉰 것 같지 않고, 예전엔 즐겁던 일이 시들하게 느껴지나요? 마음 피로도 체크는 최근 2주 동안의 나를 돌아보는 9개 문항의 자가점검이에요. 의학적 진단은 아니지만, 지금 내 마음의 배터리가 얼마나 남았는지 알아보고 돌봄이 필요한 신호를 놓치지 않도록 도…"/>
+<link rel="canonical" href="https://www.jonbercoaching.com/test-mind.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="1%코칭클럽"/>
+<meta property="og:title" content="마음 피로도 체크 | 1%코칭클럽 마음 테스트"/>
+<meta property="og:description" content="요즘 쉬어도 쉰 것 같지 않고, 예전엔 즐겁던 일이 시들하게 느껴지나요? 마음 피로도 체크는 최근 2주 동안의 나를 돌아보는 9개 문항의 자가점검이에요. 의학적 진단은 아니지만, 지금 내 마음의 배터리가 얼마나 남았는지 알아보고 돌봄이 필요한 신호를 놓치지 않도록 도…"/>
+<meta property="og:image" content="https://www.jonbercoaching.com/banner.jpg"/>
+<meta property="og:url" content="https://www.jonbercoaching.com/test-mind.html"/>
+<meta name="theme-color" content="#2E211A"/>
+<meta name="google-site-verification" content="AavClKAf3sU2ZreB6oYWt73z9Ht51uqcLzUjASguQh0" />
+<meta name="naver-site-verification" content="199d537dd5af4e6e393c9560109fb34e0567b44c" />
+<link rel="icon" href="coach.jpg"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="top-bar">
+  <div class="top-inner">
+    <a href="index.html"><img class="avatar" src="coach.jpg" alt="1%코치"/></a>
+    <a class="brand" href="index.html"><b>1%</b>코칭클럽</a>
+    <div class="top-actions">
+      <a class="icon-btn" href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener" aria-label="유튜브"><span class="material-icons-round">smart_display</span></a>
+      <a class="kakao-btn" href="https://open.kakao.com/me/jonber" target="_blank" rel="noopener"><span class="material-icons-round">chat</span><span class="kb-text">고민 보내기</span></a>
+    </div>
+  </div>
+</header>
+<main class="main">
+<nav class="crumb"><a href="index.html">홈</a> <span class="sep">›</span> <a href="tests.html">마음 테스트</a> <span class="sep">›</span> <span>마음 피로도 체크</span></nav>
+<div class="page-hero test-hero" style="--c:#4F6B5A">
+  <div class="ph-emoji">🔋</div>
+  <div class="ph-kicker">SELF CHECK · ⏱ 2분</div>
+  <h1 class="ph-title">마음 피로도 체크</h1>
+  <p class="ph-desc">요즘 나, 얼마나 지쳐 있을까? 2주간의 나를 돌아보기</p>
+</div>
+<div class="card test-intro" id="test-intro">
+  <p>요즘 쉬어도 쉰 것 같지 않고, 예전엔 즐겁던 일이 시들하게 느껴지나요? 마음 피로도 체크는 최근 2주 동안의 나를 돌아보는 9개 문항의 자가점검이에요. 의학적 진단은 아니지만, 지금 내 마음의 배터리가 얼마나 남았는지 알아보고 돌봄이 필요한 신호를 놓치지 않도록 도와줘요.</p>
+  <div class="ti-meta"><span>📝 9문항</span><span>⏱ 약 2분</span><span>🔒 답변은 저장되지 않아요</span></div>
+  <button class="btn primary big" onclick="startTest()">테스트 시작하기<span class="material-icons-round">arrow_forward</span></button>
+</div>
+<div id="test-runner" class="card runner" style="display:none"></div>
+<div class="section-head"><h2 class="section-title">다른 테스트도 해보세요</h2><a class="more-link" href="tests.html">전체 보기 ›</a></div>
+<div class="test-grid"><a class="test-tile " style="--c:#B8742F" href="test-hogu.html">
+  <div class="tt-emoji">🫠</div>
+  <div class="tt-title">나의 호구 지수 테스트</div>
+  <div class="tt-desc">혹시 나, 착한 게 아니라 이용당하고 있는 건 아닐까?</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#8E5521" href="test-teto.html">
+  <div class="tt-emoji">⚡</div>
+  <div class="tt-title">테토 vs 에겐 성향 테스트</div>
+  <div class="tt-desc">나는 직진하는 테토형일까, 공감하는 에겐형일까?</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#B4636B" href="test-love.html">
+  <div class="tt-emoji">💞</div>
+  <div class="tt-title">나의 연애 스타일 테스트</div>
+  <div class="tt-desc">사랑할 때 나는 어떤 모습일까? 애착 유형으로 알아보기</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#6E6157" href="test-cut.html">
+  <div class="tt-emoji">✂️</div>
+  <div class="tt-title">손절해야 할 관계 체크리스트</div>
+  <div class="tt-desc">떠오르는 그 사람, 계속 곁에 둬도 괜찮을까?</div>
+  <span class="tt-time">⏱ 1분</span>
+</a></div>
+<div class="section-head"><h2 class="section-title">관련 처방 읽기</h2></div>
+<div class="list"><a class="card list-item" data-tab="boss" href="work-boss-conclusion.html">
+  <div class="adv-emoji">🎯</div>
+  <div class="li-body"><div class="li-tag">직장 · 상사</div><div class="adv-title">&quot;그래서 결론이 뭔데?&quot; 상사의 압박 질문</div><div class="adv-sub">결론 → 숫자 → 효과, 30초 안에</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="boss" href="work-boss-bad-order.html">
+  <div class="adv-emoji">🧭</div>
+  <div class="li-body"><div class="li-tag">직장 · 상사</div><div class="adv-title">상사 지시가 말이 안 될 때</div><div class="adv-sub">반박하지 말고 대안을 제시하라</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="boss" href="work-younger-boss.html">
+  <div class="adv-emoji">👔</div>
+  <div class="li-body"><div class="li-tag">직장 · 상사</div><div class="adv-title">나보다 어린 상사와 일하게 됐을 때</div><div class="adv-sub">나이는 경험이고, 직급은 역할이다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a></div>
+
+<footer class="footer">
+  <div class="foot-links"><a href="about.html">1%코칭클럽 소개</a> · <a href="contact.html">문의하기</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="stories.html">고민사연</a></div>
+  <strong>1%코칭클럽</strong> · 유튜브 <a href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener">@1pro_coaching</a><br/>
+  이 사이트의 내용과 테스트는 일상의 고민을 돕기 위한 코칭 콘텐츠이며, 의학적 진단이나 전문 의료 상담을 대신하지 않습니다.
+  <div class="help-line">혼자 견디기 힘든 마음이라면 지금 바로 이야기하세요.<br/><strong>자살예방상담 109</strong> · <strong>정신건강위기상담 1577-0199</strong> · <strong>여성긴급전화 1366</strong> (24시간)</div>
+  <p style="margin-top:12px">© 2026 1%코칭클럽</p>
+</footer>
+</main>
+<nav class="bottom-nav"><div class="nav-inner"><a class="nav-item" href="index.html"><span class="material-icons-round">home</span><span>홈</span></a><a class="nav-item" href="people.html"><span class="material-icons-round">diversity_3</span><span>인간관계</span></a><a class="nav-item" href="love.html"><span class="material-icons-round">favorite</span><span>연애</span></a><a class="nav-item" href="work.html"><span class="material-icons-round">work</span><span>직장</span></a><a class="nav-item active" href="tests.html"><span class="material-icons-round">psychology_alt</span><span>테스트</span></a></div></nav>
+<div class="snackbar" id="snackbar"></div>
+<script src="common.js"></script>
+<script>window.TEST = {"id": "mind", "emoji": "🔋", "title": "마음 피로도 체크", "desc": "요즘 나, 얼마나 지쳐 있을까? 2주간의 나를 돌아보기", "time": "2분", "color": "#4F6B5A", "type": "scale", "intro": "최근 2주 동안의 나를 떠올리며 답해 주세요. 진단이 아닌 자가점검용이에요.", "questions": ["아침에 일어나면 하루가 버겁게 느껴진다.", "예전에 즐겁던 일이 별로 즐겁지 않다.", "사람들을 만나는 게 귀찮고 피곤하다.", "작은 일에도 쉽게 짜증이 나거나 눈물이 난다.", "잠들기 어렵거나, 자도 개운하지 않다.", "집중이 잘 안 되고 자꾸 멍해진다.", "\"나만 힘든 것 같다\"는 생각이 자주 든다.", "쉬어도 쉰 것 같지 않다.", "내 감정을 털어놓을 사람이 없다고 느낀다."], "results": [{"min": 0, "emoji": "🌞", "title": "마음 배터리 충분", "summary": "피로도 낮음", "desc": "지금 당신의 마음은 비교적 건강하게 충전되어 있어요. 지금의 생활 리듬과 나를 돌보는 습관을 잘 지켜 주세요.", "tips": ["좋은 컨디션일 때 나를 기분 좋게 하는 것들을 적어 두면, 지칠 때 큰 힘이 돼요."]}, {"min": 26, "emoji": "⛅", "title": "마음 배터리 절반", "summary": "피로도 보통", "desc": "조금씩 지쳐가고 있어요. 아직은 버틸 만하지만, 이대로 쌓이면 어느 순간 방전될 수 있어요. 이번 주에는 나를 위한 시간을 의식적으로 만들어 주세요.", "tips": ["하루 15분, 휴대폰 없이 걷거나 쉬는 시간을 가져 보세요.", "\"싫다\"고 말할 수 있는 일 하나를 정리해 보세요."]}, {"min": 51, "emoji": "🌧️", "title": "마음 배터리 부족", "summary": "피로도 높음", "desc": "많이 지쳐 있네요. 그동안 너무 오래 애써 왔어요. 지금은 더 잘하려 하기보다 쉬어야 할 때예요. 믿을 수 있는 사람에게 지금의 마음을 꼭 이야기해 보세요.", "tips": ["잠·식사 같은 기본부터 챙겨 주세요.", "이런 상태가 2주 이상 이어진다면 전문가 상담을 받아 보세요.", "정신건강위기상담 1577-0199 (24시간)"]}, {"min": 76, "emoji": "🪫", "title": "마음 배터리 방전 위험", "summary": "피로도 매우 높음", "desc": "지금 정말 많이 힘든 시간을 보내고 있군요. 여기까지 버텨온 것만으로도 충분히 대단해요. 이제는 혼자 견디지 말고, 꼭 도움을 받아 주세요. 도움을 청하는 건 약한 게 아니라 나를 지키는 용기예요.", "tips": ["가까운 정신건강의학과나 상담센터에 상담을 받아 보세요.", "정신건강위기상담 1577-0199 · 자살예방상담 109 (24시간)", "지금 당장 위험하다고 느껴진다면 119 또는 112에 연락하세요."]}]};</script>
+<script src="test.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

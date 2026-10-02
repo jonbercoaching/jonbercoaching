@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>나의 연애 스타일 테스트 | 1%코칭클럽 마음 테스트</title>
+<meta name="description" content="사랑할 때 나는 불안해지는 편인가요, 거리를 두는 편인가요? 연애 스타일 테스트는 심리학의 애착 유형(안정형·불안형·회피형·혼란형)을 바탕으로, 연애할 때의 내 모습을 8개 질문으로 알아봐요. 내 유형을 알면 반복되는 연애 고민의 이유가 보이기 시작해요."/>
+<link rel="canonical" href="https://www.jonbercoaching.com/test-love.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="1%코칭클럽"/>
+<meta property="og:title" content="나의 연애 스타일 테스트 | 1%코칭클럽 마음 테스트"/>
+<meta property="og:description" content="사랑할 때 나는 불안해지는 편인가요, 거리를 두는 편인가요? 연애 스타일 테스트는 심리학의 애착 유형(안정형·불안형·회피형·혼란형)을 바탕으로, 연애할 때의 내 모습을 8개 질문으로 알아봐요. 내 유형을 알면 반복되는 연애 고민의 이유가 보이기 시작해요."/>
+<meta property="og:image" content="https://www.jonbercoaching.com/banner.jpg"/>
+<meta property="og:url" content="https://www.jonbercoaching.com/test-love.html"/>
+<meta name="theme-color" content="#2E211A"/>
+<meta name="google-site-verification" content="AavClKAf3sU2ZreB6oYWt73z9Ht51uqcLzUjASguQh0" />
+<meta name="naver-site-verification" content="199d537dd5af4e6e393c9560109fb34e0567b44c" />
+<link rel="icon" href="coach.jpg"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="top-bar">
+  <div class="top-inner">
+    <a href="index.html"><img class="avatar" src="coach.jpg" alt="1%코치"/></a>
+    <a class="brand" href="index.html"><b>1%</b>코칭클럽</a>
+    <div class="top-actions">
+      <a class="icon-btn" href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener" aria-label="유튜브"><span class="material-icons-round">smart_display</span></a>
+      <a class="kakao-btn" href="https://open.kakao.com/me/jonber" target="_blank" rel="noopener"><span class="material-icons-round">chat</span><span class="kb-text">고민 보내기</span></a>
+    </div>
+  </div>
+</header>
+<main class="main">
+<nav class="crumb"><a href="index.html">홈</a> <span class="sep">›</span> <a href="tests.html">마음 테스트</a> <span class="sep">›</span> <span>나의 연애 스타일 테스트</span></nav>
+<div class="page-hero test-hero" style="--c:#B4636B">
+  <div class="ph-emoji">💞</div>
+  <div class="ph-kicker">SELF CHECK · ⏱ 2분</div>
+  <h1 class="ph-title">나의 연애 스타일 테스트</h1>
+  <p class="ph-desc">사랑할 때 나는 어떤 모습일까? 애착 유형으로 알아보기</p>
+</div>
+<div class="card test-intro" id="test-intro">
+  <p>사랑할 때 나는 불안해지는 편인가요, 거리를 두는 편인가요? 연애 스타일 테스트는 심리학의 애착 유형(안정형·불안형·회피형·혼란형)을 바탕으로, 연애할 때의 내 모습을 8개 질문으로 알아봐요. 내 유형을 알면 반복되는 연애 고민의 이유가 보이기 시작해요.</p>
+  <div class="ti-meta"><span>📝 8문항</span><span>⏱ 약 2분</span><span>🔒 답변은 저장되지 않아요</span></div>
+  <button class="btn primary big" onclick="startTest()">테스트 시작하기<span class="material-icons-round">arrow_forward</span></button>
+</div>
+<div id="test-runner" class="card runner" style="display:none"></div>
+<div class="section-head"><h2 class="section-title">다른 테스트도 해보세요</h2><a class="more-link" href="tests.html">전체 보기 ›</a></div>
+<div class="test-grid"><a class="test-tile " style="--c:#B8742F" href="test-hogu.html">
+  <div class="tt-emoji">🫠</div>
+  <div class="tt-title">나의 호구 지수 테스트</div>
+  <div class="tt-desc">혹시 나, 착한 게 아니라 이용당하고 있는 건 아닐까?</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#8E5521" href="test-teto.html">
+  <div class="tt-emoji">⚡</div>
+  <div class="tt-title">테토 vs 에겐 성향 테스트</div>
+  <div class="tt-desc">나는 직진하는 테토형일까, 공감하는 에겐형일까?</div>
+  <span class="tt-time">⏱ 2분</span>
+</a><a class="test-tile " style="--c:#6E6157" href="test-cut.html">
+  <div class="tt-emoji">✂️</div>
+  <div class="tt-title">손절해야 할 관계 체크리스트</div>
+  <div class="tt-desc">떠오르는 그 사람, 계속 곁에 둬도 괜찮을까?</div>
+  <span class="tt-time">⏱ 1분</span>
+</a><a class="test-tile " style="--c:#5C4A6E" href="test-gaslight.html">
+  <div class="tt-emoji">🕯️</div>
+  <div class="tt-title">혹시 나도 가스라이팅 당하고 있을까?</div>
+  <div class="tt-desc">&quot;내가 예민한 걸까?&quot; 자꾸 그런 생각이 든다면</div>
+  <span class="tt-time">⏱ 1분</span>
+</a></div>
+<div class="section-head"><h2 class="section-title">관련 처방 읽기</h2></div>
+<div class="list"><a class="card list-item" data-tab="start" href="love-how-to-meet.html">
+  <div class="adv-emoji">🌱</div>
+  <div class="li-body"><div class="li-tag">연애 · 썸·고백</div><div class="adv-title">여자친구·남자친구, 어디서 어떻게 만나죠?</div><div class="adv-sub">인연은 우연이 아니라 동선에서 생긴다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="start" href="love-some-check.html">
+  <div class="adv-emoji">💌</div>
+  <div class="li-body"><div class="li-tag">연애 · 썸·고백</div><div class="adv-title">썸인지 아닌지 헷갈릴 때 확인하는 법</div><div class="adv-sub">애매함이 길어지면 설렘은 피로가 된다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a><a class="card list-item" data-tab="start" href="love-confession.html">
+  <div class="adv-emoji">🎯</div>
+  <div class="li-body"><div class="li-tag">연애 · 썸·고백</div><div class="adv-title">고백, 언제 어떻게 해야 성공할까?</div><div class="adv-sub">고백은 시작이 아니라 확인이다</div></div>
+  <span class="material-icons-round chev">chevron_right</span>
+</a></div>
+
+<footer class="footer">
+  <div class="foot-links"><a href="about.html">1%코칭클럽 소개</a> · <a href="contact.html">문의하기</a> · <a href="privacy.html">개인정보처리방침</a> · <a href="stories.html">고민사연</a></div>
+  <strong>1%코칭클럽</strong> · 유튜브 <a href="https://www.youtube.com/@1pro_coaching" target="_blank" rel="noopener">@1pro_coaching</a><br/>
+  이 사이트의 내용과 테스트는 일상의 고민을 돕기 위한 코칭 콘텐츠이며, 의학적 진단이나 전문 의료 상담을 대신하지 않습니다.
+  <div class="help-line">혼자 견디기 힘든 마음이라면 지금 바로 이야기하세요.<br/><strong>자살예방상담 109</strong> · <strong>정신건강위기상담 1577-0199</strong> · <strong>여성긴급전화 1366</strong> (24시간)</div>
+  <p style="margin-top:12px">© 2026 1%코칭클럽</p>
+</footer>
+</main>
+<nav class="bottom-nav"><div class="nav-inner"><a class="nav-item" href="index.html"><span class="material-icons-round">home</span><span>홈</span></a><a class="nav-item" href="people.html"><span class="material-icons-round">diversity_3</span><span>인간관계</span></a><a class="nav-item" href="love.html"><span class="material-icons-round">favorite</span><span>연애</span></a><a class="nav-item" href="work.html"><span class="material-icons-round">work</span><span>직장</span></a><a class="nav-item active" href="tests.html"><span class="material-icons-round">psychology_alt</span><span>테스트</span></a></div></nav>
+<div class="snackbar" id="snackbar"></div>
+<script src="common.js"></script>
+<script>window.TEST = {"id": "love", "emoji": "💞", "title": "나의 연애 스타일 테스트", "desc": "사랑할 때 나는 어떤 모습일까? 애착 유형으로 알아보기", "time": "2분", "color": "#B4636B", "type": "pick", "questions": [{"q": "연인의 답장이 몇 시간째 없을 때 나는?", "a": [{"t": "바쁜가 보다, 내 할 일 한다", "k": "S"}, {"t": "혹시 마음이 식었나 계속 신경 쓰인다", "k": "A"}, {"t": "오히려 편하다, 나도 내 시간이 필요하다", "k": "V"}, {"t": "불안하면서도 먼저 연락하긴 싫다", "k": "F"}]}, {"q": "연인이 \"우리 얘기 좀 해\"라고 하면?", "a": [{"t": "무슨 일인지 차분히 들어본다", "k": "S"}, {"t": "헤어지자는 건 아닐까 심장이 철렁한다", "k": "A"}, {"t": "부담스러워서 피하고 싶다", "k": "V"}, {"t": "듣고 싶으면서도 도망가고 싶다", "k": "F"}]}, {"q": "사랑하는 사람과 가까워질수록?", "a": [{"t": "더 편안하고 안정된다", "k": "S"}, {"t": "잃을까 봐 더 불안해진다", "k": "A"}, {"t": "숨이 막히는 느낌이 든다", "k": "V"}, {"t": "좋다가도 갑자기 밀어내고 싶어진다", "k": "F"}]}, {"q": "다툰 뒤 나는?", "a": [{"t": "감정이 가라앉으면 먼저 대화를 청한다", "k": "S"}, {"t": "빨리 풀고 싶어서 내가 다 잘못했다고 한다", "k": "A"}, {"t": "혼자 시간을 갖고 아무 일 없던 듯 지낸다", "k": "V"}, {"t": "화해하고 싶은데 차갑게 굴게 된다", "k": "F"}]}, {"q": "연인이 친구들과 여행을 간다면?", "a": [{"t": "잘 다녀오라고 응원한다", "k": "S"}, {"t": "자주 연락해 주길 바란다", "k": "A"}, {"t": "나도 자유 시간이 생겨 좋다", "k": "V"}, {"t": "괜찮다고 말하지만 속은 복잡하다", "k": "F"}]}, {"q": "\"사랑해\"라는 말에 대해 나는?", "a": [{"t": "자연스럽게 주고받는다", "k": "S"}, {"t": "자주 듣고 확인하고 싶다", "k": "A"}, {"t": "말로 하는 게 어색하다", "k": "V"}, {"t": "믿고 싶은데 잘 믿기지 않는다", "k": "F"}]}, {"q": "연애가 끝났을 때 나는?", "a": [{"t": "충분히 슬퍼한 뒤 일상으로 돌아온다", "k": "S"}, {"t": "오랫동안 붙잡고 싶어 한다", "k": "A"}, {"t": "생각보다 빨리 정리한다", "k": "V"}, {"t": "후련함과 그리움이 계속 오간다", "k": "F"}]}, {"q": "내가 바라는 사랑은?", "a": [{"t": "서로 믿고 각자의 삶도 존중하는 사랑", "k": "S"}, {"t": "늘 함께하고 확신을 주는 사랑", "k": "A"}, {"t": "적당한 거리가 있는 편안한 사랑", "k": "V"}, {"t": "상처받지 않을 수 있는 안전한 사랑", "k": "F"}]}], "results": {"S": {"emoji": "🌳", "title": "안정형 — 단단한 나무 같은 사랑", "summary": "신뢰를 주는 연인", "desc": "당신은 사랑을 믿고, 상대를 믿고, 무엇보다 자신을 믿는 사람이에요. 곁에 있는 사람을 편안하게 만드는 힘이 있죠. 지금처럼 솔직하게 마음을 표현하면 건강한 사랑을 오래 지킬 수 있어요.", "tips": ["불안한 연인을 만난다면, 말보다 꾸준한 행동으로 안심시켜 주세요.", "당신의 안정감은 큰 매력이에요. 스스로를 낮추지 마세요."]}, "A": {"emoji": "🌷", "title": "불안형 — 온 마음을 다하는 사랑", "summary": "깊이 사랑하는 연인", "desc": "당신은 누구보다 깊이, 진심으로 사랑하는 사람이에요. 그래서 잃을까 봐 더 불안하죠. 하지만 사랑은 확인할수록 커지는 게 아니라, 믿을수록 단단해져요.", "tips": ["불안할 땐 바로 연락하기 전에 10분만 나를 위한 일을 해 보세요.", "\"나 사랑해?\" 대신 \"나는 이럴 때 안심이 돼\"라고 말해 보세요.", "연애 탭의 \"연락 문제\" 카드를 읽어 보세요."]}, "V": {"emoji": "🦋", "title": "회피형 — 자유를 사랑하는 사랑", "summary": "나만의 공간이 필요한 연인", "desc": "당신은 독립적이고 스스로를 잘 돌보는 사람이에요. 다만 가까워지는 순간 한 걸음 물러서는 습관이 상대를 외롭게 할 수 있어요. 거리를 두고 싶을 땐, 사라지는 대신 말로 알려 주세요.", "tips": ["\"나 잠깐 혼자 정리할 시간이 필요해, 내일 연락할게\"라고 말해 보세요.", "작은 감정부터 표현하는 연습을 해 보세요."]}, "F": {"emoji": "🌗", "title": "혼란형 — 다가가고 싶고 지키고 싶은 사랑", "summary": "상처를 이겨내는 중인 연인", "desc": "사랑받고 싶은 마음과 상처받기 싫은 마음이 함께 있어요. 그래서 다가갔다가 밀어내기를 반복하죠. 그건 당신이 이상해서가 아니라, 그만큼 마음을 지키려 애써 왔기 때문이에요.", "tips": ["내 감정이 오락가락할 때, 노트에 적어 보면 패턴이 보여요.", "천천히 신뢰를 쌓을 수 있는 다정한 사람을 곁에 두세요.", "마음이 많이 힘들다면 전문 상담도 큰 도움이 될 수 있어요."]}}};</script>
+<script src="test.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
